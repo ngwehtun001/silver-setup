@@ -30,6 +30,8 @@ The React frontend and Tauri host are intentionally minimal. Feature, shared, pl
 
 The scaffold has no product-level host access, network request, telemetry, account, background service, or privilege elevation. Planned installers and upgrades require security review before implementation. See [SECURITY.md](SECURITY.md) for the current support and reporting status.
 
+GitHub vulnerability alerts and Dependabot security-fix PRs are enabled. Routine dependency upgrades are reviewed manually; automated version-update PRs are disabled.
+
 ## License
 
 No public license has been granted yet. All rights are reserved until the project owner selects and adds a license.
