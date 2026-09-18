@@ -1,0 +1,40 @@
+name: Bug report
+description: Report reproducible incorrect behavior without sensitive data.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not report suspected vulnerabilities here. See SECURITY.md. Do not include credentials, tokens, private paths, or unsanitized logs.
+  - type: input
+    id: revision
+    attributes:
+      label: SilverSetup revision or version
+      description: Use a commit hash while there is no supported release.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows, macOS, Ubuntu, Fedora, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true

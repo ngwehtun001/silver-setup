@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">SilverSetup preview icon</title>
+  <desc id="description">A silver letter S inside a dark rounded square.</desc>
+  <defs>
+    <linearGradient id="surface" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#252932"/>
+      <stop offset="1" stop-color="#0D0F13"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="160" y1="112" x2="352" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#C8CEDA"/>
+      <stop offset="1" stop-color="#7D8594"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#surface)"/>
+  <rect x="35" y="35" width="442" height="442" rx="101" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="6"/>
+  <path d="M355 158C329 131 296 118 255 118C199 118 159 147 159 190C159 235 196 251 253 263C294 272 313 279 313 301C313 324 291 338 255 338C214 338 181 323 151 293L113 340C150 378 197 397 253 397C318 397 360 363 360 312C360 262 323 245 265 233C225 225 207 218 207 198C207 178 226 166 256 166C289 166 317 178 342 203L355 158Z" fill="url(#silver)"/>
+</svg>

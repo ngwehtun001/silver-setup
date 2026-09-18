@@ -1,0 +1,28 @@
+{
+  "name": "silversetup-workspace",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local-first development workstation setup application",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24.20.0 <25",
+    "pnpm": ">=11.9.0 <12"
+  },
+  "scripts": {
+    "bootstrap": "pnpm install --frozen-lockfile",
+    "dev": "pnpm --dir apps/desktop dev",
+    "build": "pnpm --dir apps/desktop build",
+    "tauri": "pnpm --dir apps/desktop tauri",
+    "tauri:dev": "pnpm --dir apps/desktop tauri dev",
+    "tauri:build": "pnpm --dir apps/desktop tauri build",
+    "format": "pnpm --dir apps/desktop format && cargo fmt --all",
+    "format:check": "pnpm --dir apps/desktop format:check && cargo fmt --all --check",
+    "lint": "pnpm --dir apps/desktop lint && pnpm run build && cargo clippy --workspace --all-targets --all-features -- -D warnings",
+    "typecheck": "pnpm --dir apps/desktop typecheck",
+    "test:web": "pnpm --dir apps/desktop test:coverage",
+    "test:rust": "pnpm run build && cargo test --workspace --all-targets --all-features",
+    "test": "pnpm run test:web && pnpm run test:rust",
+    "coverage:rust": "pnpm run build && cargo tarpaulin --workspace --exclude silversetup-desktop --all-features --fail-under 92 --out Html",
+    "check": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test"
+  }
+}
