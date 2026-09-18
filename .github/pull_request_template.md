@@ -10,7 +10,7 @@ Describe the user-visible or engineering outcome.
 ## Verification
 
 - [ ] `pnpm run check`
-- [ ] Relevant desktop build
+- [ ] Desktop build when native or platform behavior changes (or N/A)
 - [ ] Manual checks described below
 
 ## Risk review
